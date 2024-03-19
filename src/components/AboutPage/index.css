@@ -1,0 +1,166 @@
+.about-page{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-left: 308px;
+    padding-right: 200px;
+}
+
+[data-aos="vertical-anime2"] {
+    height: 0;
+    transition-duration: 2s;
+    transition-property: height;
+    &.aos-animate {
+        height: 100%;
+    }
+}
+
+.about-page-title {
+    color: #807979;
+    font-weight: bold;
+    font-size: 29px;
+    margin: 0px;
+    margin-top: 34px;
+    margin-bottom: 30px;
+}
+
+.about-me-para{
+    line-height: 1.28;
+    margin-top: 4px;
+}
+
+.scroll-reveal-container {
+    margin: 0;
+    display: inline-block;
+}
+
+.scroll-reveal-span1, .scroll-reveal-span2 {
+    font-family: 'Inconsolata', monospace;
+    color: hsl(0 0% 100% / 0.2);
+    font-size: 23px;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(90deg, #ffffff, #ffffff);
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view(y);
+}
+
+.scroll-reveal-span1 {
+    animation-range-start: 10vh;
+    animation-range-end: 50vh;
+}
+
+.scroll-reveal-span2 {
+    animation-range-start: 30vh;
+    animation-range-end: 50vh;
+}
+
+@keyframes scroll-reveal {
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+.skill-heading {
+    color: #807979;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.skill-img-container {
+    width: 16.6%;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.skill-tooltip {
+    visibility: hidden;
+    position: absolute;
+    color: #ffffff;
+    background-color: #88a2ff;
+    border-radius: 5px;
+    padding: 4px 10px;
+    top: 75%;
+    right: 35%;
+    font-size: 13px;
+}
+
+.skill-img-container:hover .skill-tooltip {
+    visibility: visible;
+}
+
+
+.skill-img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all 0.4s;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.skill-img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 758px) and (max-width: 1190px) {
+    .about-page {
+        padding-left: 190px;
+        padding-right: 70px;
+    }
+
+    .scroll-reveal-span1, .scroll-reveal-span2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 757px) {
+    .about-page {
+        padding-left: 54px;
+        padding-right: 14px;
+    }
+    
+    .about-page-title {
+        font-size: 25px;
+    }
+
+    .skill-heading {
+        font-size: 20px;
+        line-height: 1.43;
+    }
+
+    .skill-img-container {
+        width: 25%;
+    }
+
+    .skill-img {
+        width: 63% !important;
+    }
+
+    .scroll-reveal-span1 {
+        animation-range-start: 10vh;
+        animation-range-end: 60vh;
+    }
+
+    .about-me-para {
+        line-height: 1.42;
+    }
+
+    .scroll-reveal-span1, .scroll-reveal-span2 {
+        font-size: 19px;
+    }
+} 
