@@ -7,12 +7,12 @@ To run this application locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Nithish-14/Shiniunicorns.git
+   git clone https://github.com/Nithish-14/Portfolio.git
 
 2. Navigate into the project directory:
 
    ```bash
-   cd Shiniunicorns
+   cd Portfolio
 
 3. Install dependencies:
 
