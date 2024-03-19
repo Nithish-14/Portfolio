@@ -1,4 +1,4 @@
-# Nithish Portfolio
+# Portfolio
 
 ## Installation & Set Up
 
